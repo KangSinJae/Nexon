@@ -1,0 +1,415 @@
+@charset "utf-8";
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 15px;
+  }
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: 55vw;
+    background-color: #00a1e1;
+    position: relative;
+  }
+  header img {
+    width: 8vw;
+    object-fit: cover;
+    position: absolute;
+    left: 2%;
+    top: 5%;
+  }
+  header ul {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    font-family: Nexon Lv2 Gothic;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  header ul li {
+    border-top: 2px solid black;
+    border-bottom: none;
+    text-align: left;
+    width: 12vw;
+    padding: 0.667rem 0 0.767rem 0;
+  }
+  header ul li:first-child {
+    display: block;
+  }
+  header h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Nexon Lv2 Gothic;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.8;
+    color: #000;
+    white-space: nowrap;
+    width: 40vw;
+  }
+  header h2 {
+    position: absolute;
+    bottom: 0;
+    font-family: pretendard;
+    font-weight: 900;
+    font-size: 20rem;
+    color: #fff;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 0.7;
+    margin: 0;
+  }
+  /* Main 1 */
+  .main1 {
+    height: 80vw;
+    width: 100%;
+    position: relative;
+  }
+  .main1-box {
+    width: 80%;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .main1-box li:nth-child(1) {
+    grid-column: 1 / 3;
+  }
+  .main1-box li:nth-child(2) {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+  .main1-box li:nth-child(3) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  .main1-box li {
+    font-family: Nexon Lv2 Gothic;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4rem;
+    width: 40vw;
+    line-height: 9vw;
+    height: 9vw;
+    margin: 3vw auto;
+  }
+  .main1-box li::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border: 4.58vw solid transparent;
+    border-left: 4.58vw solid #000;
+    border-top: 0px;
+  }
+  .main1-box li:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 67%;
+    width: 0;
+    height: 0;
+    border: 4.58vw solid transparent;
+    border-right: 4.58vw solid #000;
+    border-top: 0px;
+  }
+  .main1 .main-txt-box {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Nexon Lv2 Gothic;
+    text-align: center;
+    font-size: 4rem;
+    width: 60vw;
+  }
+  .main-txt-box h1,
+  h2 {
+    font-weight: 700;
+  }
+  .main-txt-box span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-txt-box img {
+    width: 10vw;
+    object-fit: cover;
+  }
+
+  /* Main2 */
+  .main2 {
+    width: 100%;
+    height: 80vw;
+  }
+  .main2 ul {
+    margin-top: 10vw;
+  }
+  .main2 ul li {
+    font-family: Nexon Lv2 Gothic;
+    font-weight: 700;
+    font-size: 2.667rem;
+    margin-top: 3vw;
+    text-align: center;
+  }
+  .main2 .main2-txt strong {
+    background-color: rgba(0, 161, 225, 30%);
+  }
+
+  /* Game */
+  .game-box .game-txt-box {
+    display: block;
+    width: 20vw;
+    height: 20vw;
+    background-color: #0b2a4a;
+    color: #fff;
+    font-family: pretendard;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 10%;
+    position: relative;
+  }
+  .game-box .game-txt-box p {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .game-box {
+    background-color: #000;
+    color: #fff;
+    height: 150vw;
+    margin-top: 3.333rem;
+    position: relative;
+  }
+  .game-box .game-grid {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 22vw 22vw 22vw;
+    justify-content: center;
+  }
+  .game-img-box img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+  .game-img-box p {
+    display: none;
+  }
+  .game-img-box h2 {
+    display: none;
+  }
+  .game-box .game-img-box {
+    width: 20vw;
+    height: 25vw;
+  }
+  .game-box .game-btn {
+    background-color: #242424;
+    font-family: pretendard;
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 12vw;
+    height: 2.8vw;
+    line-height: 2.8vw;
+    margin: 0.1rem auto;
+    text-align: center;
+    border-radius: 0.667rem;
+  }
+  .game-box h3 {
+    color: #2e2e2e;
+    display: block;
+    font-family: pretendard;
+    font-weight: 900;
+    font-size: 15rem;
+    writing-mode: vertical-rl;
+    position: absolute;
+    overflow: hidden;
+    left: -4%;
+    bottom: 2%;
+  }
+  /* Review-box */
+  .review-box {
+    background-color: #f2f2f2;
+    height: 130vw;
+    padding-bottom: 0;
+  }
+  .review-box .review-grid {
+    width: 84vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 42vw 42vw;
+    grid-template-rows: 20vw 23vw 23vw 23vw 23vw;
+  }
+  .review-box .nexon-box {
+    display: flex;
+    font-family: Nexon Lv2 Gothic;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+  }
+  .review-box .nexon-box .nexon-txt-box {
+    background-color: #fff;
+    width: 36vw;
+    height: 15vw;
+    border-radius: 2.667rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .review-box .nexon-box .nexon-txt-box h2 {
+    font-family: Nexon Lv2 Gothic;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  .review-box .nexon-box .nexon-txt-box h1 {
+    font-family: Nexon Lv2 Gothic;
+    font-size: 2.667rem;
+    font-weight: 700;
+  }
+  .review-box .user-box .user-txt-box p {
+    font-family: pretendard;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+  .review-box .user-box .user-txt-box h2 {
+    font-family: pretendard;
+    font-weight: 700;
+    font-size: 2.667rem;
+  }
+  .user-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2vw 0;
+  }
+  .user-box:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  .user-box .user-txt-box {
+    width: 37vw;
+    height: 22vw;
+    border-radius: 2.667rem;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .user-box img {
+    width: 10vw;
+    margin-left: 3rem;
+    margin-bottom: 1.733rem;
+  }
+  .user-box .user-txt-box h2 {
+    width: 33vw;
+    margin: 1.333rem auto;
+  }
+  .user-box .user {
+    font-family: Nexon Lv2 Gothic;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .user-box .user-txt-box p {
+    width: 33vw;
+    margin: 1.333rem auto;
+  }
+  .nexon-box {
+    width: 40vw;
+  }
+  .user-box {
+    width: 45vw;
+  }
+  .review-grid .user-box:nth-child(2){
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .review-grid .user-box:nth-child(3){
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .review-grid .user-box:nth-child(4){
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  .review-grid .user-box:nth-child(5){
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  /* Logo */
+  .logo-box{
+    height: 50vw;
+    position: relative;
+  }
+  .logo-box img{
+    width: 10vw;
+    object-fit: cover;
+  }
+  .logo-img-box{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .logo-img-box ul{
+    width: 100vw; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .logo-img-box ul li:nth-child(n+4){
+    display: block;
+  }
+  footer {
+    padding: 5vw;
+    background-color: #000;
+    height: 35vw;
+    position: relative;
+  }
+  footer h1 {
+    color: #c3d600;
+    font-family: pretendard;
+    font-weight: 700;
+    font-size: 5.5rem;
+  }
+  footer h2 {
+    color: #fff;
+    font-family: pretendard;
+    font-weight: 700;
+    font-size: 5.5rem;
+    margin: 0;
+  }
+  footer .footer-txt {
+    margin-top: 6.667rem;
+    margin-left: 3.333rem;
+    transform: translateY(20%);
+  }
+  footer .footer{
+    position: absolute;
+  }
+}

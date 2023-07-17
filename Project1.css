@@ -1,0 +1,409 @@
+@charset "utf-8";
+
+@media (min-width: 375px) {
+  /* 최상위 영역 */
+  html{font-size: 15px;}
+  header {
+    height: 165vw;
+    width: 100%;
+    background-color: #00a1e1;
+    position: relative;
+  }
+  header img {
+    width: 25vw;
+    position: absolute;
+    left: 2%;
+    top: 4%;
+    object-fit: cover;
+  }
+  header ul {
+    position: absolute;
+    right: 2%;
+    top: 3%;
+    font-family: Nexon Lv2 Gothic;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  header ul li {
+    border-bottom: 0.1rem solid black;
+    text-align: right;
+    width: 30vw;
+    padding: 0.667rem 0 0.667rem 0.667rem;
+  }
+  header ul li:first-child{
+    display: none;
+  }
+  header h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Nexon Lv2 Gothic;
+    font-weight: 700;
+    font-size: 1.5625rem;
+    line-height: 1.8;
+    color: #000;
+    white-space: nowrap;
+  }
+  header h1 strong {
+    color: #fff;
+  }
+  header h2 {
+    position: absolute;
+    bottom: 0;
+    font-family: pretendard;
+    font-weight: 900;
+    font-size: 4.333rem;
+    color: #fff;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 0.7;
+    margin: 0;
+  }
+  /* Main 1 */
+  .main1 {
+    height: 171vw;
+    width: 100%;
+    position: relative;
+  }
+
+  .main1-box {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main1-box li {
+    font-family: Nexon Lv2 Gothic;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding: 0.69vw;
+    border-radius: 1.5rem;
+    width: 90vw;
+    line-height: 14vw;
+    height: 15vw;
+    margin: 6vw auto;
+  }
+  .main1-box li::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border: 4.58vw solid transparent;
+    border-left: 4.58vw solid #000;
+    border-top: 0px;
+  }
+  .main1-box li:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: 80%;
+    width: 0;
+    height: 0;
+    border: 4.58vw solid transparent;
+    border-right: 4.58vw solid #000;
+    border-top: 0px;
+  }
+  .main1 .main-txt-box {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Nexon Lv2 Gothic;
+    text-align: center;
+    font-size: 2rem;
+    width: 60vw;
+  }
+  .main-txt-box h1,
+  h2 {
+    font-weight: 700;
+  }
+  .main-txt-box span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-txt-box img{
+    width: 20vw;
+    object-fit: cover;
+  }
+  /* Main2 */
+  .main2 {
+    width: 100%;
+    height: 160vw;
+  }
+  .main2 ul {
+    margin-top: 10vw;
+  }
+  .main2 ul li {
+    font-family: Nexon Lv2 Gothic;
+    font-weight: 700;
+    font-size: 1.667rem;
+    margin-top: 10vw;
+    text-align: center;
+  }
+  .main2 .point li {
+    width: 3vw;
+    height: 3vw;
+    background-color: #8d8d8d;
+    border-radius: 50%;
+    margin: 1.667rem auto;
+  }
+  .main2 .main2-txt strong {
+    background-color: rgba(0, 161, 225, 30%);
+  }
+  /* Game */
+  .game-box {
+    margin-top: 20vw;
+    background-color: #000;
+    color: #fff;
+    height: 420vw;
+  }
+  .game-box .game-grid {
+    padding-top: 20vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .game-img-box p {
+    color: #00a1e1;
+    font-family: Nexon Lv2 Gothic;
+    font-weight: 400;
+    font-size: 0.667rem;
+    margin-top: 1vw;
+  }
+  .game-img-box h2 {
+    font-family: Nexon Lv2 Gothic;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .game-img-box img {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+  .game-box .game-img-box {
+    width: 40vw;
+    height: 60vw;
+  }
+  .game-box .game-btn {
+    background-color: #242424;
+    font-family: pretendard;
+    font-size: 0.867rem;
+    font-weight: 400;
+    width: 32vw;
+    height: 8vw;
+    line-height: 8vw;
+    margin: 10vw auto;
+    text-align: center;
+    border-radius: 5%;
+  }
+  .game-box .game-txt-box{
+    display: none;
+  }
+  .game-box h3{
+    display: none;
+  }
+
+  /* Review-box */
+  .review-box {
+    background-color: #f2f2f2;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+    height: 340vw;
+  }
+  .review-box .nexon-box {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Nexon Lv2 Gothic;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 10vw;
+  }
+  .review-box .nexon-box .nexon-txt-box {
+    background-color: #fff;
+    width: 80vw;
+    height: 30vw;
+    border-radius: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .review-box .nexon-box .nexon-txt-box h2 {
+    font-family: Nexon Lv2 Gothic;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  .review-box .nexon-box .nexon-txt-box h1 {
+    font-family: Nexon Lv2 Gothic;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .review-box .user-box .user-txt-box p {
+    font-family: pretendard;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .review-box .user-box .user-txt-box h2 {
+    font-family: pretendard;
+    font-weight: 700;
+    font-size: 1.333rem;
+  }
+  .user-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1.333rem auto;
+  }
+  .user-box:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  .user-box .user-txt-box {
+    width: 78vw;
+    height: 61vw;
+    border-radius: 10%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .user-box img {
+    width: 28vw;
+    margin-left: 1.333rem;
+  }
+  .user-box .user-txt-box h2 {
+    width: 66vw;
+    margin: 0.667vw auto;
+  }
+  .user-box .user {
+    font-family: Nexon Lv2 Gothic;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .user-box .user-txt-box p {
+    width: 66vw;
+    margin: 0.333rem auto;
+    font-family: Nexon Lv2 Gothic;
+    font-size: 0.867rem;
+    font-weight: 400;
+  }
+
+  /* Logo */
+  .logo-box {
+    height: 80vw;
+    position: relative;
+    text-align: center;
+    padding-top: 1.333rem;
+  }
+  .logo-box p {
+    font-family: Nexon Lv2 Gothic;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .logo-box h2 {
+    font-family: Nexon Lv2 Gothic;
+    font-size: 1.533rem;
+    font-weight: 700;
+    margin-bottom: 1.333rem;
+  }
+  .logo-box span {
+    color: #00a1e1;
+    font-family: Nexon Lv2 Gothic;
+    font-size: 1.533rem;
+    font-weight: 700;
+  }
+  .logo-img-box{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .logo-img-box ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .logo-img-box ul li{
+    margin: 0 3vw;
+  }
+  .logo-img-box ul li:nth-child(n+4){
+    display: none;
+  }
+  .logo-img-box img {
+    width: 25vw;
+    object-fit: cover;
+  }
+  .logo-box .logo-txt {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+  }
+  /* Footer */
+  footer {
+    background-color: #000;
+    height: 80vw;
+    position: relative;
+  }
+  footer h1 {
+    color: #c3d600;
+    font-family: pretendard;
+    font-weight: 700;
+    font-size: 2.667rem;
+  }
+  footer h2 {
+    width: 60vw;
+    color: #fff;
+    font-family: pretendard;
+    font-weight: 700;
+    font-size: 2.667rem;
+    margin: 0;
+  }
+  footer menu {
+    display: flex;
+    color: #fff;
+    font-family: pretendard;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 2rem;
+    /* margin-left: 1.667rem; */
+    transform: translateY(100%);
+  }
+  footer .footer-txt {
+    margin: 0;
+    width: 60vw;
+  }
+  footer menu li {
+    margin-right: 1rem;
+  }
+  footer h2 br {
+    display: none;
+  }
+  footer .footer{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+  }
+}
